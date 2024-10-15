@@ -22,7 +22,7 @@ app.use('/api/user', userRoutes);
 sequelize.sync({ force: true }).then(() => {
     seedProducts();
     seedUser();
-    const PORT = process.env.PORT || 3000; // Puerto del servidor
+    const PORT = 3000; // Puerto del servidor
     app.listen(PORT, () => {
         console.log(`Servidor corriendo en el puerto ${PORT}`);
     });
