@@ -22,9 +22,9 @@ app.use('/api/user', userRoutes);
 sequelize.sync({ force: true }).then(() => {
     seedProducts();
     seedUser();
-    const PORT = 3000; // Puerto del servidor
-    app.listen(PORT, () => {
-        console.log(`Servidor corriendo en el puerto ${PORT}`);
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+        console.log(`Servidor corriendo en el puerto ${port}`);
     });
 }).catch((err) => {
     console.error('Error al conectar con la base de datos:', err);
