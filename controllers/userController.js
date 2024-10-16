@@ -24,7 +24,6 @@ exports.userLogin = async (req, res) => {
             userId: user.id,
             email: user.email,
             isAuthenticated: true
-            // Puedes agregar más datos del usuario si lo deseas
         });
 
     } catch (error) {

@@ -19,7 +19,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/user', userRoutes);
 
 // Conectar a la base de datos y luego iniciar el servidor
-sequelize.sync().then(() => {
+sequelize.sync({ force: true }).then(() => {
     seedProducts();
     seedUser();
     const port = process.env.PORT || 3001;
