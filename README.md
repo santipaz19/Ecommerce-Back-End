@@ -2,25 +2,27 @@
 
 Este proyecto es la API para la aplicación Mi tienda E-Commerce. A continuación, se detallan las instrucciones para configurar y ejecutar el proyecto localmente.
 
+## Tecnologias
+Utilicé Node.js como entorno de ejecución para la aplicación, SQLite como base de datos ligera y Express.js para la creación de la API y el manejo de rutas.
+
 ## Descripción de la Aplicación
 
 La API permite:
 
 - **Gestionar Productos**: Permite obtener todos los Productos, buscar uno específico por su ID, modificar uno ya existente o crear uno nuevo.
-- **Simular Batallas**: Proporciona la lógica necesaria para realizar batallas, así como la capacidad de guardar y obtener información sobre todas las batallas o filtrarlas por ID de batalla o por Pokémon.
-- **Cargar Datos**: Permite la carga inicial de datos de Pokémon desde archivos para facilitar la configuración inicial.
+- **Cargar Datos**: Permite la carga inicial de datos de productos y usuarios desde archivos para facilitar la configuración inicial.
 
   
 ## Descripción de la Aplicación
 
 EndPoints:
 
-- /api/products POST
-- /api/products GET
-- /api/products/:id GET
-- /api/products DELETE
-- /api/products/:id PUT
-- /api/user POST
+- /api/products POST para crear un producto
+- /api/products GET para obtener todos los productos
+- /api/products/:id GET para obtener un producto especifico
+- /api/products DELETE para eliminar un producto
+- /api/products/:id PUT para actualizar un producto
+- /api/user POST para logear usuario
 
 # Deploy:
 https://ecommers-back-end.onrender.com
